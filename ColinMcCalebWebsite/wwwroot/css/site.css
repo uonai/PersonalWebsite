@@ -1,0 +1,74 @@
+﻿/* Provide sufficient contrast against white background */
+a {
+  color: blue;
+}
+
+nav {
+    padding:20px 0;
+}
+
+.navbar-link {
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 62px;
+    text-decoration:none;
+    margin-bottom:50px;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+    line-height: 1.47;
+    font-family: 'Inter', sans-serif;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform:uppercase;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+body {
+  padding:0 20px;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+main {
+  align-self: center;
+  max-width:900px;
+  padding-bottom: 20px;
+}
+.footer {
+  padding:20px;
+  position: absolute;
+  bottom: 0;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+  overflow: hidden;
+}
+
+

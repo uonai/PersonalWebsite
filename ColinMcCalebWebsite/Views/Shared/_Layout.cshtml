@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ColinMcCalebWebsite</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <a class="navbar-link" asp-area="" asp-controller="Home" asp-action="Index">Colin McCaleb</a><br />
+                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a> - <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Information">Info</a> - <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Bookmarks">Bookmarks</a>  - <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Donate">Buy Me a Coffee</a> ☕
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - Colin McCaleb | <a href="mailto:cs.mccaleb@gmail.com">Contact</a>
+        </div>
+    </footer>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
