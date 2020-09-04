@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Stripe;
 
 namespace Website
 {
@@ -27,6 +28,7 @@ namespace Website
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        [Obsolete]
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -52,6 +54,8 @@ namespace Website
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            StripeConfiguration.SetApiKey("");
         }
     }
 }

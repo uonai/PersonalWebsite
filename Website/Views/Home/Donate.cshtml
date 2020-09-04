@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Donate";
+}
+
+<h1>Donate</h1>
+
+<div>
+    <form action="/Stripe/Processing" method="POST">
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                data-key=""
+                data-amount="@ViewBag.PaymentAmount"
+                data-name="[My Company Name]"
+                data-description="10 rubberducks for 1$ each"
+                data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                data-locale="en"
+                data-zip-code="true"
+                data-label="Pay 10$">
+        </script>
+    </form>
+</div>
