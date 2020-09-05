@@ -4,16 +4,17 @@ a {
 }
 
 nav {
-    padding:20px 0;
+    padding: 20px 0;
 }
 
 .navbar-link {
     color: black;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 62px;
-    text-decoration:none;
-    margin-bottom:50px;
+    font-size: 42px;
+    text-decoration: none;
+    margin-bottom: 50px;
+    line-height: 1.2;
 }
 
 /* Sticky footer styles
@@ -27,8 +28,18 @@ html {
   html {
     font-size: 18px;
   }
+  .navbar-link{
+    font-size:64px;
+  }
 }
 
+ul {
+  padding: 0 0 0 20px;
+}
+
+ul li {
+  padding: 0 0 5px 0;
+}
 .box-shadow {
   box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
